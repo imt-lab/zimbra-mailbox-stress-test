@@ -1,0 +1,10 @@
+version: '3'
+services:
+  lmtp_stress_test:
+      image: zimbra-lmtp-stress-tests
+      restart: always
+      environment:
+        LMTP_SERVER: <lmtp_server>
+        LMTP_PORT: <lmtp_port>
+        EMAILS: <imtlab_user1@example.com,imtlab_user2@example.com>
+        THREADS: 100
