@@ -4,6 +4,27 @@ A stress test tool for zimbra mailbox
 
 ### Install
 
+##### Build image
+
 ```shell script
-git clone 
+git clone https://github.com/imt-lab/zimbra-mailbox-stress-test.git
+cd zimbra-mailbox-stress-test/app
+docker build -t "zimbra-lmtp-stress-tests" .
 ```
+
+##### Run app
+
+Edit the `docker-compose.yml` file, then run it:
+
+```shell script
+cd zimbra-mailbox-stress-test/
+docker-compose up
+```
+
+Check the logs mailbox:
+
+```shell script
+tail -100f /opt/zimbra/log/mailbox.log
+```
+
+That's it!
