@@ -18,7 +18,7 @@ Edit the `docker-compose.yml` file, then run it:
 
 ```shell script
 cd zimbra-mailbox-stress-test/
-docker-compose up
+docker-compose up --scale lmtp_stress_test=3
 ```
 
 Check the logs mailbox:
