@@ -1,5 +1,5 @@
-# zimbra lmtp stress test
-A stress test tool for zimbra mailbox
+# zimbra mailbox(lmtp) stress test
+A stress test tool for zimbra mailbox (lmtp)
 
 
 ### Install
